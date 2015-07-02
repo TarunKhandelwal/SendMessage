@@ -1,0 +1,11 @@
+<resources>
+ 
+    <item name="textColor" type="color">#731616</item>
+    <item name="bgColor" type="color">#E65A14</item>
+ 
+    <integer-array name="androidcolors">
+        <item>@color/textColor</item>
+        <item>@color/bgColor</item>
+    </integer-array>
+ 
+</resources> 

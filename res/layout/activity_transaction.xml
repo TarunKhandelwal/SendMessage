@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   android:background="@drawable/appback3">
+
+    <TextView
+        android:id="@+id/txt_phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/phone_label" 
+         android:textColor="#731616"
+          android:textStyle="bold"
+        android:textSize="16sp"/>
+       
+        
+        
+
+    <EditText
+        android:id="@+id/phone_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_phone_label"
+        android:layout_below="@+id/txt_phone_label"
+        android:layout_marginTop="14dp"
+         android:layout_marginRight="10dp"
+         android:textStyle="bold"
+        android:textSize="16sp"
+         android:background="#F9DBCD"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="phone"
+         android:textColor="#731616"
+        
+         />
+
+    <EditText
+        android:id="@+id/amount_paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_amount_label"
+        android:layout_below="@+id/txt_amount_label"
+        android:layout_marginTop="15dp"
+          android:layout_marginRight="10dp"
+         android:background="#F9DBCD"
+        android:ems="10"
+         android:textStyle="bold"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+         android:textColor="#731616"
+      />
+
+    <TextView
+        android:id="@+id/txt_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone_no"
+        android:layout_below="@+id/phone_no"
+        android:layout_marginTop="14dp"
+        android:text="@string/amount_label"
+        android:textColor="#731616"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+	<TextView
+        android:id="@+id/error_string_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amount_paid"
+        android:layout_below="@+id/amount_paid"
+        android:textColor="#731616"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+    
+    <EditText
+        android:id="@+id/bill_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bill_no_label"
+        android:layout_below="@+id/bill_no_label"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="#F9DBCD"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:textColor="#731616" />
+
+    <TextView
+        android:id="@+id/bill_no_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amount_paid"
+        android:layout_below="@+id/amount_paid"
+        android:layout_marginTop="34dp"
+        android:text="@string/billno_label"
+        android:textColor="#731616"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/btn_cancel"
+        android:layout_alignBottom="@+id/btn_cancel"
+        android:layout_alignLeft="@+id/bill_no"
+        android:layout_marginLeft="38dp"
+        android:background="#E65A14"
+        android:text="@string/submit_label"
+        android:textColor="#731616"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/bill_no"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/btn_submit"
+        android:background="#E65A14"
+        android:text="@string/cancel_label"
+        android:textColor="#731616"
+        android:textStyle="bold" />
+
+<TextView
+        android:id="@+id/error_string_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bill_no"
+        android:layout_below="@+id/bill_no"
+        android:textColor="#731616"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+    
+    
+</RelativeLayout >
